@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dark Mode Test</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <script>
+
+        function toggleDarkMode() {
+            const html = document.documentElement;
+            html.classList.toggle('dark');
+        }
+    </script>
+</head>
+<body class="bg-white text-black dark:bg-slate-800 dark:text-white transition-all">
+    <!-- Dark mode toggle button -->
+    <div class="p-10">
+        <button onclick="toggleDarkMode()" class="p-3 bg-gray-200 dark:bg-gray-600 rounded-full">
+            Toggle Dark Mode
+        </button>
+    </div>
+    
+    <!-- Content -->
+    <div class="dark:bg-slate-500">
+        <h1 class="text-8xl">Dark Mode Test with Tailwind CSS</h1>
+        <p class="text-3xl">PRINCE KUMAR VIDYARTHI</p>
+    </div>
+    
+    <div class="flex m-20 border border-slate-300 p-3">
+        <div class="bg-blue-500 w-12 h-12"></div>
+        <p class="text-2xl ml-10 p-3">PRINCE KUMAR</p>
+    </div>
+</body>
+</html>

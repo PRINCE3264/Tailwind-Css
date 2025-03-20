@@ -1,0 +1,141 @@
+1. Layout Utilities
+Display:
+
+block, inline, inline-block, flex, grid, hidden, etc.
+Box Sizing:
+
+box-border, box-content
+Positioning:
+
+static, relative, absolute, fixed, sticky
+inset-0, top-0, right-0, bottom-0, left-0
+Spacing:
+
+Margin: m-4, mt-4, mr-4, mb-4, ml-4, mx-4, my-4
+Padding: p-4, pt-4, pr-4, pb-4, pl-4, px-4, py-4
+Width & Height:
+
+w-1/2, w-full, h-32, h-full, max-w-lg, max-h-full
+Flexbox:
+
+flex, inline-flex, flex-row, flex-col, flex-wrap
+justify-start, justify-center, justify-between, items-center, etc.
+Grid:
+
+grid, grid-cols-1, grid-cols-2, grid-rows-3, gap-4
+2. Typography Utilities
+Font Size:
+
+text-xs, text-sm, text-base, text-lg, text-xl, text-2xl, etc.
+Font Weight:
+
+font-light, font-normal, font-medium, font-semibold, font-bold
+Text Color:
+
+text-red-500, text-blue-300, text-gray-700, etc.
+Text Alignment:
+
+text-left, text-center, text-right, text-justify
+Line Height:
+
+leading-tight, leading-normal, leading-loose
+Text Decoration:
+
+underline, line-through, no-underline
+Text Transform:
+
+uppercase, lowercase, capitalize, normal-case
+Letter Spacing:
+
+tracking-tight, tracking-normal, tracking-wide
+3. Background Utilities
+Background Color:
+
+bg-red-500, bg-blue-300, bg-gray-700
+Background Image:
+
+bg-cover, bg-contain, bg-center
+Background Position:
+
+bg-top, bg-center, bg-bottom
+Background Repeat:
+
+bg-no-repeat, bg-repeat, bg-repeat-x, bg-repeat-y
+Opacity:
+
+opacity-0, opacity-25, opacity-50, opacity-75, opacity-100
+4. Borders & Outline
+Border Width:
+
+border, border-2, border-4, border-8
+Border Color:
+
+border-red-500, border-blue-300
+Border Radius:
+
+rounded, rounded-lg, rounded-full, rounded-t, rounded-b
+Border Style:
+
+border-solid, border-dashed, border-dotted
+Outline:
+
+outline-none, outline-blue-500
+5. Shadows
+Box Shadow:
+shadow, shadow-md, shadow-lg, shadow-xl, shadow-2xl
+shadow-inner, shadow-outline
+6. Transition & Animation
+Transition:
+
+transition, transition-all, transition-colors, transition-opacity
+Animation:
+
+animate-spin, animate-ping, animate-pulse, animate-bounce
+7. Flexbox & Grid
+Flexbox:
+
+flex, inline-flex, flex-row, flex-col, flex-wrap, items-center, justify-between
+Grid:
+
+grid, grid-cols-1, grid-cols-2, grid-cols-3, gap-4
+8. Responsive Design
+Tailwind makes responsive design easy with breakpoint prefixes:
+
+Mobile-First (default):
+
+No prefix for small screens (base styles).
+Responsive Breakpoints:
+
+sm: - Small screens (min-width: 640px)
+md: - Medium screens (min-width: 768px)
+lg: - Large screens (min-width: 1024px)
+xl: - Extra-large screens (min-width: 1280px)
+2xl: - 2x Extra-large screens (min-width: 1536px)
+Example:
+
+html
+Copy
+<div class="text-sm md:text-lg lg:text-2xl">
+  This text will be small on mobile, large on tablets, and 2x larger on desktops.
+</div>
+9. Forms
+Tailwind provides utilities for form elements like:
+
+Inputs:
+
+border, border-gray-400, rounded, p-2, focus:outline-none
+Checkboxes, Radio Buttons:
+
+form-checkbox, form-radio
+Labels & Textareas:
+
+text-sm, font-medium, p-2, bg-gray-100
+10. Customization and Configuration
+Tailwind is highly customizable. You can modify almost all aspects of the framework by editing the tailwind.config.js file. This file can define custom colors, spacing values, breakpoints, and more.
+
+11. Plugins
+Tailwind has an active ecosystem of plugins that allow you to add additional features. Some popular plugins include:
+
+@tailwindcss/forms: Provides styling for form elements.
+@tailwindcss/typography: Adds utility classes for rich text formatting.
+@tailwindcss/aspect-ratio: Adds utilities for maintaining aspect ratios.
